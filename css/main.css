@@ -136,6 +136,11 @@ nav a:focus {
     color: #DDD;
 }
 
+.logo {
+    max-width: 300px;
+    max-height: 75px;
+}
+
 @media (min-width: 60rem) {
     .logo {
         float: left;
@@ -196,7 +201,7 @@ nav a:focus {
 
     .home-about {
         background-image: url(../img/who-we-are.jpg);
-        background-size: no-repeat;
+        background-size: cover;
         padding-bottom: 10em;
     }
 
@@ -233,6 +238,7 @@ nav a:focus {
 }
 
 .port-item img {
+    object-fit: cover;
     display: block;
 }
 
