@@ -1,0 +1,46 @@
+/* buttons */
+
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.button-accent {
+    color: #F4E87B;
+    border-color: #F4E87B;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: #F4E87B;
+    color: #232323;
+}
+
+
+.button-dark {
+    color: #232323;
+    border-color: #232323;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+    background: #F4E87B;
+    border-color: #F4E87B;
+    color: #232323;
+}

@@ -1,0 +1,59 @@
+/* portfolio
+====================== */
+
+.portfolio {
+    margin: 3em 0 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.port-item img {
+    max-width: 616px;
+    max-height: 406px;
+    object-fit: cover;
+    display: block;
+    width: 100vw;
+}
+
+.port-description {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,.6);
+    padding-bottom: 2em;
+}
+
+.port-description p {
+    margin: 1em;
+}
+
+@media (min-width: 37rem) {
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+
+@media (min-width: 60rem) {
+    .port-item {
+        width: 33.3333334%;
+        float: left;
+        overflow: hidden;
+    }
+
+    .port-description {
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-description {
+        transform: translateY(0%);
+    }
+}

@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@700&display=swap');
 
 * {
 
     box-sizing: border-box;
     transition: all ease-in-out 250ms;
+}
+
+h1 {
+    font-family: 'Overlock', cursive;
 }
 
 body {
@@ -18,13 +23,86 @@ body {
    margin: 0 auto; 
 }
 
+.clearfix::after, 
+section::after,
+footer::after {
+content: '';
+display: block;
+clear: both;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* typography
-======================== */
+/* column system
+====================== */
+
+[class^=col-] {
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+    margin-top: 0;
+}
+
+.col-1 {
+    width: 33.333334%;
+    float: left;
+}
+
+@media (min-width: 40rem) { 
+    
+    [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+    }
+
+    [class^=col-]:first-child {
+        padding-left: 0;
+    }
+
+    [class^=col-]:last-child {
+        padding-right: 0;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+
+    .col-1 {
+        width: 16.6666%;
+    }
+}
+
+/* typography */
+
+a:link {
+    color: #F4E87B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F4E87B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F4E87B;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: underline;
+}
 
 h1 {
     font-weight: 300;
@@ -54,6 +132,16 @@ p:last-of-type {
     font-size: .9em;
 }
 
+.title-cta {
+    margin: 0 0 .5em;
+}
+
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 @media (min-width: 60rem) {
     
     p {
@@ -65,41 +153,13 @@ p:last-of-type {
     }
 }
 
-/* buttons */
+/* parallax
+======================== */
 
-.button {
-    display: inline-block;
-    font-size: 1.15rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-width: 2px;
-    border-style: solid;
-    padding: .5em 1.75em;
+.parallax--bg,
+.parallax--box {
+    transition: initial;
 }
-
-@media (min-width: 60rem) {
-    .button {
-        font-size: 1.5rem;
-    }
-}
-
-.button-small {
-    font-size: .7rem;
-    font-weight: 700;
-}
-
-.button-accent {
-    color: #F4E87B;
-    border-color: #F4E87B;
-}
-
-.button-accent:hover,
-.button-accent:focus {
-    background: #F4E87B;
-    color: #232323;
-}
-
-
 
 /* header
 ======================== */
@@ -200,6 +260,7 @@ nav a:focus {
     }
 
     .home-about {
+        background-color: #DF9DC0;
         background-image: url(../img/who-we-are.jpg);
         background-size: cover;
         padding-bottom: 10em;
@@ -225,67 +286,21 @@ nav a:focus {
 }
 
 
-/* portfolio
-====================== */
-
-.portfolio {
-    margin: 3em 0;
-}
-
-.port-item {
-    margin: 0;
-    position: relative;
-}
-
-.port-item img {
-    object-fit: cover;
-    display: block;
-}
-
-.port-description {
-    position: absolute;
-    z-index: 100;
-    bottom: 0em;
-    left: 0em;
-    right: 0em;
-    color: white;
-    background: rgba(0,0,0,.6);
-    padding-bottom: 2em;
-}
-
-.port-description p {
-    margin: 1em;
-}
-
-@media (min-width: 37rem) {
-    .port-item {
-        width: 50%;
-        float: left;
-    }
-}
-
-
-@media (min-width: 60rem) {
-    .port-item {
-        width: 33.3333334%;
-        float: left;
-        overflow: hidden;
-    }
-
-    .port-description {
-        transform: translateY(150%);
-    }
-
-    .port-item:hover .port-description {
-        transform: translateY(0%);
-    }
-}
-
 
 /* CTA
 ====================== */
 
 .cta {
     background-color: #DF9DC0;
-    padding: 3em 0;
+    padding: 6em 0;
+}
+
+/* Footer
+====================== */
+
+footer {
+    background: #232323;
+    color: #FFF;
+    text-align: left;
+    padding: 5em 0;
 }
