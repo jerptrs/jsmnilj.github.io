@@ -24,3 +24,21 @@
 }
 
 
+.txtimg {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+@media(min-width: 35rem) {
+    .txtimg{
+        max-width: 25%;
+        max-height: 25%;
+    }
+}
+
+@media(min-width: 80rem) {
+    .txtimg{
+        max-width: 15%;
+        max-height: 15%;
+    }
+}
