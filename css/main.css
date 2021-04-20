@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@700&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Overlock:wght@700&display=swap');
 
 * {
 
@@ -18,17 +18,17 @@ body {
 }
 
 .container {
-   width: 95%;
-   max-width: 70em;
-   margin: 0 auto; 
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
 }
 
-.clearfix::after, 
-section::after,
-footer::after {
-content: '';
-display: block;
-clear: both;
+.clearfix::after,
+footer::after,
+section::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 img {
@@ -43,7 +43,6 @@ img {
     width: 100%;
     margin-top: 1em;
 }
-
 [class^=col-]:first-child {
     margin-top: 0;
 }
@@ -52,19 +51,16 @@ img {
     width: 33.333334%;
     float: left;
 }
+@media (min-width: 40rem) {
 
-@media (min-width: 40rem) { 
-    
     [class^=col-] {
-    float: left;
-    padding: 0 .5em;
-    margin-top: 0;
+        float: left;
+        padding: 0 0.5em;
+        margin-top: 0;
     }
-
     [class^=col-]:first-child {
         padding-left: 0;
     }
-
     [class^=col-]:last-child {
         padding-right: 0;
     }
@@ -79,25 +75,21 @@ img {
 }
 
 /* typography */
-
 a:link {
     color: #F4E87B;
     background-color: transparent;
     text-decoration: none;
 }
-
 a:visited {
     color: #F4E87B;
     background-color: transparent;
     text-decoration: none;
 }
-
 a:hover {
     color: #F4E87B;
     background-color: transparent;
     text-decoration: underline;
 }
-
 a:active {
     color: #fff;
     background-color: transparent;
@@ -114,7 +106,6 @@ p {
     margin-top: 0;
     line-height: 1.5;
 }
-
 p:last-of-type {
     margin-bottom: 0;
 }
@@ -129,11 +120,11 @@ p:last-of-type {
 .title span {
     font-weight: 300;
     display: block;
-    font-size: .9em;
+    font-size: 0.9em;
 }
 
 .title-cta {
-    margin: 0 0 .5em;
+    margin: 0 0 0.5em;
 }
 
 .unstyled-list {
@@ -141,9 +132,8 @@ p:last-of-type {
     padding: 0;
     list-style-type: none;
 }
-
 @media (min-width: 60rem) {
-    
+
     p {
         font-size: 1.2rem;
         line-height: 1.6;
@@ -170,9 +160,8 @@ p:last-of-type {
     text-transform: uppercase;
     border-width: 2px;
     border-style: solid;
-    padding: .5em 1.75em;
+    padding: 0.5em 1.75em;
 }
-
 @media (min-width: 60rem) {
     .button {
         font-size: 1.5rem;
@@ -180,7 +169,7 @@ p:last-of-type {
 }
 
 .button-small {
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-weight: 700;
 }
 
@@ -188,26 +177,22 @@ p:last-of-type {
     color: #F4E87B;
     border-color: #F4E87B;
 }
-
-.button-accent:hover,
-.button-accent:focus {
+.button-accent:focus,
+.button-accent:hover {
     background: #F4E87B;
     color: #232323;
 }
-
 
 .button-dark {
     color: #232323;
     border-color: #232323;
 }
-
-.button-dark:hover,
-.button-dark:focus {
+.button-dark:focus,
+.button-dark:hover {
     background: #F4E87B;
     border-color: #F4E87B;
     color: #232323;
 }
-
 
 /* header
 ======================== */
@@ -234,13 +219,12 @@ nav a {
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8rem;
-    padding: .5em;
+    font-size: 0.8rem;
+    padding: 0.5em;
     color: #DF9DC0;
 }
-
-nav a:hover,
-nav a:focus {
+nav a:focus,
+nav a:hover {
     color: #DDD;
 }
 
@@ -248,7 +232,6 @@ nav a:focus {
     max-width: 300px;
     max-height: 75px;
 }
-
 @media (min-width: 60rem) {
     .logo {
         float: left;
@@ -263,13 +246,12 @@ nav a:focus {
 ====================== */
 
 .home-hero {
-    background-image: url(../img/hero-bg.jpg);
+    background-image: url("../img/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     padding: 10em 0;
     color: #F4E87B;
 }
-
 @media (min-width: 60rem) {
     .home-hero {
         height: 100vh;
@@ -284,7 +266,7 @@ nav a:focus {
     background-color: #232323;
     padding: 4em;
     width: 100vw;
-    margin-left:-2.5%;
+    margin-left: -2.5%;
     outline: 2px solid #DF9DC0;
     outline-offset: -2.5em;
     color: #FFF;
@@ -297,11 +279,10 @@ nav a:focus {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: .75em;
+    top: 0.75em;
     background: #232323;
-    padding: 0 .145em;
+    padding: 0 0.145em;
 }
-
 @media (min-width: 60rem) {
     h1 {
         font-size: 2.5rem;
@@ -309,7 +290,7 @@ nav a:focus {
 
     .home-about {
         background-color: #DF9DC0;
-        background-image: url(../img/who-we-are.jpg);
+        background-image: url("../img/who-we-are.jpg");
         background-size: cover;
         padding-bottom: 10em;
     }
@@ -318,15 +299,14 @@ nav a:focus {
         width: 50%;
         padding: 7em;
         outline-offset: -3.75em;
-        margin-left:-2.5%;
+        margin-left: -2.5%;
         top: -5em;
         text-align: left;
         box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
     }
 
-
     .home-about-textbox h1 {
-        top: .75em;
+        top: 0.75em;
         left: 6rem;
         transform: translateX(0);
     }
@@ -357,9 +337,9 @@ nav a:focus {
 .port-description {
     position: absolute;
     z-index: 100;
-    bottom: 0em;
-    left: 0em;
-    right: 0em;
+    bottom: 0;
+    left: 0;
+    right: 0;
     color: white;
     background: rgba(0,0,0,.6);
     padding-bottom: 2em;
@@ -368,15 +348,12 @@ nav a:focus {
 .port-description p {
     margin: 1em;
 }
-
 @media (min-width: 37rem) {
     .port-item {
         width: 50%;
         float: left;
     }
 }
-
-
 @media (min-width: 60rem) {
     .port-item {
         width: 33.3333334%;
@@ -387,13 +364,10 @@ nav a:focus {
     .port-description {
         transform: translateY(150%);
     }
-
     .port-item:hover .port-description {
         transform: translateY(0%);
     }
 }
-
-
 
 /* CTA
 ====================== */
